@@ -1,8 +1,14 @@
-import Header from "./components/header";
+import Routes from "./routes";
+import GlobalStyle from "./styles/global";
 import "./App.css";
 
-function App() {
-  return <Header />;
-}
+const App = () => {
+  return (
+    <>
+      <GlobalStyle />
+      <Routes />
+    </>
+  );
+};
 
 export default App;

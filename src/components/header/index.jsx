@@ -6,6 +6,8 @@ import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 import { useState } from "react";
 
+import { Link } from "react-router-dom";
+
 const Header = () => {
   const history = useHistory();
   const [icon, setIcon] = useState(true);
@@ -16,18 +18,31 @@ const Header = () => {
 
   return (
     <Container>
-      <p>Logo</p>
+      <img
+        className="logo"
+        src="/assets/logo2.png"
+        alt="logo"
+        onClick={() => history.push("/")}
+      />
       <Desktop>
-        <p onClick={() => history.push("/#")}>Sou ONG</p>
-        <p onClick={() => history.push("/#")}>Sou voluntário</p>
+        <div className="item-menu">
+          <p onClick={() => history.push("/login-ong")}>Sou ONG</p>
+        </div>
+        <div className="item-menu item-menu-2">
+          <p onClick={() => history.push("/login-voluntario")}>
+            Sou voluntário
+          </p>
+        </div>
       </Desktop>
       <Mobile onClick={handleIcon}>
         {icon ? <FaChevronDown /> : <FaChevronUp />}
         {!icon && (
           <MobileList>
             <ul>
-              <li onClick={() => history.push("/#")}>Sou ONG</li>
-              <li onClick={() => history.push("/#")}>Sou voluntário</li>
+              <li onClick={() => history.push("/login-ong")}>Sou ONG</li>
+              <li onClick={() => history.push("/login-voluntario")}>
+                Sou voluntário
+              </li>
             </ul>
           </MobileList>
         )}
