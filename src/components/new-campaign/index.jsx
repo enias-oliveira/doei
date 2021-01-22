@@ -105,10 +105,10 @@ const NewCampaign = (props) => {
 
     axios
       .post(`https://capstone4-kenzie.herokuapp.com/campaigns`, info, config)
+      .then(() => window.location.reload())
       .catch((err) => console.log(err));
 
     handleClose();
-    window.location.reload();
   };
 
   return (
