@@ -13,15 +13,7 @@ import { BiRightArrowAlt, BiEditAlt } from "react-icons/bi";
 import { useHistory } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
-const CampaignCard = ({
-  title,
-  endDate,
-  location,
-  about,
-  ongName,
-  id,
-  ongProfile = false,
-}) => {
+const CampaignCard = ({ title, endDate, location, about, ongName, id }) => {
   const history = useHistory();
 
   const ong = localStorage.getItem("isOng");
@@ -29,21 +21,6 @@ const CampaignCard = ({
   const [newTitle, setNewTitle] = useState(title);
   const [newAbout, setNewAbout] = useState(about);
   const [newDate, setNewDate] = useState(endDate);
-
-  // const handleChanges = async (data) => {
-  //   let token = localStorage.getItem("authToken");
-  //   const config = {
-  //     headers: { authorization: `Bearer ${token} ` },
-  //   };
-  //   axios
-  //     .patch(
-  //       `https://capstone4-kenzie.herokuapp.com/campaigns/${id}`,
-  //       data,
-  //       config
-  //     )
-  //     .catch((err) => console.log(err));
-  //   console.log(data);
-  // };
 
   return (
     <Box m={3}>
@@ -79,12 +56,6 @@ const CampaignCard = ({
               </InstitutionName>
             </TextContainer>
             <ButtonsDiv>
-              {ongProfile && (
-                <button>
-                  <BiEditAlt />
-                </button>
-              )}
-
               <button
                 onClick={() => {
                   history.push(`/campaign/${id}`);

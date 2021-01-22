@@ -15,6 +15,8 @@ import axios from "axios";
 import * as yup from "yup";
 import jwt_decode from "jwt-decode";
 import DetailTitle from "../../components/detail-title-blue";
+import { useDispatch } from "react-redux";
+import { getAllCampaigns } from "../../store/thunks";
 
 import { useSelector } from "react-redux";
 
@@ -47,6 +49,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const NewCampaign = (props) => {
+  const dispatch = useDispatch();
   const classes = useStyles();
   const [open, setOpen] = useState(false);
   const campaigns = useSelector((state) => state.campaigns);
@@ -105,18 +108,26 @@ const NewCampaign = (props) => {
       .catch((err) => console.log(err));
 
     handleClose();
+    window.location.reload();
   };
 
   return (
     <Container>
-      <StyledButton
-        type="button"
-        variant="outlined"
-        size="medium"
-        onClick={handleOpen}
-      >
-        Nova Campanha
-      </StyledButton>
+      {props.header ? (
+        <div className="item-menu" onClick={handleOpen}>
+          <p>Criar campanha</p>
+        </div>
+      ) : (
+        <StyledButton
+          type="button"
+          variant="outlined"
+          size="medium"
+          onClick={handleOpen}
+        >
+          Nova Campanha
+        </StyledButton>
+      )}
+
       <NewModal
         aria-labelledby="transition-modal-title"
         aria-describedby="transition-modal-description"

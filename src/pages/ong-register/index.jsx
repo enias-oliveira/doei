@@ -27,7 +27,7 @@ const OngRegister = () => {
       .required("Campo obrigatório.")
       .min(13, "CNPJ inválido")
       .matches(/[0-9]/, "Apenas números são permitidos."),
-    adress: yup.string().required("Campo obrigatório."),
+    address: yup.string().required("Campo obrigatório."),
     email: yup.string().required("Campo obrigatório.").email("Email inválido."),
     email_confirmation: yup
       .string()
@@ -92,7 +92,7 @@ const OngRegister = () => {
               <StyledTextField
                 variant="outlined"
                 size="small"
-                name="adress"
+                name="address"
                 label="Endereço"
                 inputRef={register}
                 error={!!errors.adress}
