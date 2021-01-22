@@ -2,7 +2,9 @@ export const Types = {
   CURRENT_USER: "user/CURRENT_USER",
 };
 
-const userReducer = (state = [], action) => {
+
+
+const userReducer = (state = '', action) => {
   switch (action.type) {
     case Types.CURRENT_USER:
       return action.payload;
@@ -11,7 +13,6 @@ const userReducer = (state = [], action) => {
   }
 };
 
-export default userReducer;
 
 export const setCurrentUser = user => {
   return {
@@ -19,3 +20,5 @@ export const setCurrentUser = user => {
     payload: user,
   };
 };
+
+export default userReducer;
