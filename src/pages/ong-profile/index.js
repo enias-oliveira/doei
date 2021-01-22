@@ -124,7 +124,10 @@ const OngProfile = () => {
                           title={title}
                           ongName={ongName}
                           location={location}
-                          endDate={endDate}
+                          endDate={`${endDate.slice(8, 10)}/${endDate.slice(
+                            5,
+                            7
+                          )}/${endDate.slice(0, 4)}`}
                           about={about}
                           id={id}
                         />
