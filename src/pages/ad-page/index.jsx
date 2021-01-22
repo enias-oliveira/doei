@@ -15,7 +15,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import Geocode from "react-geocode";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import TitleDetail from "../../components/detail-title-blue";
 import { motion } from "framer-motion";
 
@@ -45,12 +45,6 @@ const AdPage = () => {
     }
   }, [ad]);
 
-  // const containerStyle = {
-  //   width: `300px`,
-  //   height: `300px`,
-  //   borderRadius: "20px",
-  // };
-
   const center = {
     lat: geo.lat,
     lng: geo.lng,
@@ -68,6 +62,7 @@ const AdPage = () => {
   Geocode.enableDebug();
 
   const getLocation = (address) => {
+    console.log(address);
     Geocode.fromAddress(address).then(
       (response) => {
         const { lat, lng } = response.results[0].geometry.location;
@@ -80,9 +75,9 @@ const AdPage = () => {
   };
 
   useEffect(() => {
-    ong !== null && getLocation(`${ong.adress}`);
+    ong !== null && getLocation(`${ong.address}`);
   }, [ong]);
-  console.log(ong);
+
   const isOng = localStorage.getItem("isOng");
   return (
     <motion.div
@@ -128,7 +123,9 @@ const AdPage = () => {
                   {ong.email && <li> {ong.email} </li>}
                   {ong.phoneNumber && <li> {ong.phoneNumber} </li>}
                   <li>
-                    <a href={ong.site}>{ong.site}</a>
+                    <Link className="link" to={ong.site}>
+                      {ong.site}
+                    </Link>
                   </li>
                 </ul>
               </div>
