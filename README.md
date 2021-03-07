@@ -64,6 +64,20 @@ We learned how to structure a front-end system, studying and consuming a back-en
 
 <!-- List the features of your application or follow the template. Don't share the figma file here :) -->
 
+- ONGs and volunteers can create an account with a username, email, and password. Each with different layout and pages.
+  ![login_page_screenshot](https://lh3.googleusercontent.com/pw/ACtC-3cnsFZ4gkQ5H5AWn5j61u4c36czJztyJDj1RpJJL5UFkuXDVUeWvyiXvi379--icGDnUw2BefR-Mbbbk1PV2zxpp0uleHjzIGxDrhmn5zAcgxOkUvToCueUjEMFNtI2gfB_7KRJjqxg9babaOkpVDI1=w1253-h577-no?authuser=0)
+
+- ONGs can create custom campaigns and post them to registered volunteers and DoEi! visitors.
+  ![campaign_form](https://lh3.googleusercontent.com/pw/ACtC-3c8iL4QwrIg_Oyv2PFifXXMLiQTk_BuIyAI2isl3ia22ILtss7dJlNPGiV5LDxoWNKFGsmcTPoWCvN5IMnfS60gch3kSwNHGhWdweIVEyJHpm7mPNjSdJWniYy8syq0seXNIiJfvAKU02P2xGl8A82l=w1918-h938-no?authuser=0)
+  ![campaing_page](https://lh3.googleusercontent.com/pw/ACtC-3ese3lP2uCQBo1fUTLJsZ4w84BVzVvqsXEykb01XzibCS0frn9Z7ziGW5R0W7Awp8HQ2CyjxU0ceNKrtw01NS4lP6IZzdGrlX3Zecmy9h2r44gv7GgZMFCPZqaNbZWH7oqJJ98aX2yUCdPxkHHgYB6p=w1919-h947-no?authuser=0)
+
+- Volunteers can book a donation and manage them in their profile page.
+  ![book_donation_form](https://lh3.googleusercontent.com/pw/ACtC-3fJMINClZcXJ--ab5yxxfgXV6QBc-gzF4nw1Z6rzsQlUuXfnsz1_3ghzACqRutUXCACp3BAH4Ws4P757b5xqQ-Yb9BDnxi95gHBcetuM1P2WfKlg5Sf4rUQknstIifJzlOW34r6MODMVEyGmNi3nlzC=w1919-h945-no?authuser=0)
+  ![volunteer_profile_page](https://lh3.googleusercontent.com/pw/ACtC-3e2oCf72iy7Yh0LCCLxNRZgCr4otBAyz8WYb0CWOI_AfLO1xjcJCszVVNogUMPu_jQ2dZ3h4Styi3bx6w-2vWvtmONGecJFv9FU3oW9tvW2wuA0lU7bMpxmfUcEgbMTVpVHjCBIbqYnlRWZRGDzd7Hr=w1919-h936-no?authuser=0)
+
+- ONGs and Volunteers can edit their profile name and description.
+  ![profile_edir_form](https://lh3.googleusercontent.com/pw/ACtC-3dW4eL5QG0LCzL6yEwNUtgl6ffAJn0tT1-R8xQguIrS5OV9W8PtOgtMp6NB4dX1KWOD_sOWoAZ1tM2Ea0CA0bDY4BZbJFHTRD-PmUvssrfd8S21ZSrsMiOmviIP31JmOO-WGeBAxtNd_rY4PS4qbZj2=w371-h813-no?authuser=0)
+
 ## How To Use
 
 ## Available Scripts
@@ -74,7 +88,7 @@ To clone and run this application, you'll need [Git](https://git-scm.com) and [N
 
 ```bash
 # Clone this repository
-$ git clone https://{project-repo}
+$ git clone https://github.com/enias-oliveira/doei
 
 # Install dependencies
 $ npm install
@@ -117,10 +131,10 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 
 <!-- This section should list any articles or add-ons/plugins that helps you to complete the project. This is optional but it will help you in the future. For example: -->
 
+- [Christian Siqueira](https://www.linkedin.com/in/christian-smmc/)
+- [Enias Oliveira](https://www.linkedin.com/in/enias-oliveira/)
+- [Raphael Souza](https://www.linkedin.com/in/raphaelgs96/)
+- [Samara Collet](https://www.linkedin.com/in/samaracollet/)
+- [Thiago Jacques](https://www.linkedin.com/in/thiago-linhares-jacques/)
+
 - [devChallenges](https://devchallenges.io/) (Provided README template)
-
-## Contact
-
-- GitHub [@enias-oliveira](https://github.com/enias-oliveira)
-- LinkedIn [@enias-oliveira](https://www.linkedin.com/in/enias-oliveira/)
-- Gitlab [@enias-c137](https://gitlab.com/enias-c137)
