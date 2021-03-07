@@ -32,9 +32,10 @@
 ## Overview
 
 ![feed_screenshot](https://lh3.googleusercontent.com/pw/ACtC-3ddL0fN97-62uBjw0fT6GVT41i_EwJoGeCmPpJ-OKujBob5-V-8AkVfr0wwVLHsV0mjFHY2GcgeTfGbNrE-5UshI6kqjoBhJp2RJ3_RY-o_OsIHRdI7KVWO4S4RSk2s-D-tohotpXybzOBGrpCgA6we=w1903-h937-no?authuser=0)
-![home_mobile_screenshot](https://lh3.googleusercontent.com/pw/ACtC-3fgo7delxEbZcNnYxYSGz1rYfQtpO2rR3Ivw-OA0UzAMmdkchbpA0nOJTx_bEh0Jy4u6R3PrrtavQVNGN_76R2FDrqTx_18uA8aDmeM5ZzJZ5tHHQlYQfqChwO9rhxz-5hXR6qfe8irfqMIq_n9JvOp=w413-h843-no?authuser=0)
 
 DoEi! is a React Application where ONGs can post campaigns to raise donations and for volunteers to easily book donations, making the process of donating easy and fast.
+
+![home_mobile_screenshot](https://lh3.googleusercontent.com/pw/ACtC-3fgo7delxEbZcNnYxYSGz1rYfQtpO2rR3Ivw-OA0UzAMmdkchbpA0nOJTx_bEh0Jy4u6R3PrrtavQVNGN_76R2FDrqTx_18uA8aDmeM5ZzJZ5tHHQlYQfqChwO9rhxz-5hXR6qfe8irfqMIq_n9JvOp=w413-h843-no?authuser=0)
 
 This project was developed by a team of 5 students, as our "Capstone Project" in the "Advanced Front End with React" course from Kenzie Academy. We were tasked to create a "Fake Back End" using JSON-server.[Doei JSON-Server](https://github.com/enias-oliveira/doei-server).
 
